@@ -57,7 +57,7 @@ export default function Tenant() {
                 </Box>
             </Paper>
 
-            <h1>Tenants</h1>
+            <h1>Tenant</h1>
             <Paper elevation={3} style={paperstyle}>
                 {tenants.map(tenant=>(
                     <Paper elevation={6} style={{margin:"10px", padding:"15px", textAlign:"left"}} key={tenant.id}>
