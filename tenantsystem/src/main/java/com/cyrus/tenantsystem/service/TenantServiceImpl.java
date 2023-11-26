@@ -40,11 +40,7 @@ public class TenantServiceImpl implements TenantService {
             existingTenant.setName(tenant.getName());
             existingTenant.setAddress(tenant.getAddress());
             tenantRepository.save(existingTenant);
-
         }
-
-
-
     }
 
     @Override
