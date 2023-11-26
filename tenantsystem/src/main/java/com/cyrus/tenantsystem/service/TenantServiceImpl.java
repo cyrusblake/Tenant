@@ -27,13 +27,13 @@ public class TenantServiceImpl implements TenantService {
     }
 
     @Override
-    public List<Tenant> getAlltenants() {
+    public List<Tenant> getAllTenants() {
         return tenantRepository.findAll();
     }
 
     @Override
     public void updateTenant(int id,@Validated Tenant tenant) {
-        Optional<Tenant> optionalTenant = tenantRepository.findAllById(id);
+        Optional<Tenant> optionalTenant = tenantRepository.findById(id);
 
         if (optionalTenant.isPresent()){
             Tenant existingTenant = optionalTenant.get();

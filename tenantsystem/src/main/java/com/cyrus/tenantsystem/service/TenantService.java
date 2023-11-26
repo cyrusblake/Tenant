@@ -11,7 +11,7 @@ public interface TenantService {
 
     public Optional<Tenant> getTenant(Integer id);
 
-    public List<Tenant> getAlltenants();
+    public List<Tenant> getAllTenants();
 
     public void updateTenant(int id, Tenant tenant);
 

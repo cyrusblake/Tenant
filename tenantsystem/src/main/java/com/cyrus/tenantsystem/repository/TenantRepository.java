@@ -10,7 +10,4 @@ import java.util.Optional;
 public interface TenantRepository extends JpaRepository<Tenant, Integer> {
 
 
-    Optional<Tenant> findAllById(Integer id);
-
-
 }

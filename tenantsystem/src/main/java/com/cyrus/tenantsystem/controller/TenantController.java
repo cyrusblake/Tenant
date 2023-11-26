@@ -28,17 +28,17 @@ public class TenantController {
     }
 
     @GetMapping("/getAll")
-    public List<Tenant> getAlltenants(){
-        return tenantService.getAlltenants();
+    public List<Tenant> getAllTenants(){
+        return tenantService.getAllTenants();
     }
 
     @PutMapping("/put/{id}")
-    public void update(@PathVariable(value ="id") int id, @Validated @RequestBody Tenant tenant){
+    public void update(@PathVariable("id")  Integer id, @Validated @RequestBody Tenant tenant){
         tenantService.updateTenant(id, tenant);
     }
 
     @DeleteMapping("/{id}")
-    public void delete(@PathVariable("id") int id){
+    public void delete(@PathVariable("id") Integer id){
         tenantService.DeleteTenant(id);
     }
 
