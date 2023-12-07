@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import { Container, Paper, Button } from '@mui/material';
+import './Tenant.css'
 
 
 export default function Tenant() {
@@ -37,7 +38,7 @@ export default function Tenant() {
     <>
         <Container>
             <Paper elevation={3} style={paperstyle}>
-                <h1 style={{color: "blue"}}><u>Add Tenant</u></h1>
+                <h1 style={{color: "orange"}}><u>Add Tenant</u></h1>
                 <Box
                     component="form"
                     sx={{
@@ -53,7 +54,7 @@ export default function Tenant() {
                     value={address}
                     onChange={(e) => setAddress(e.target.value)}
                     />
-                    <Button variant="contained" onClick={handleClick}>Submit</Button>
+                    <Button variant="contained" onClick={handleClick} style={{backgroundColor: "orange"}}>Submit</Button>
                 </Box>
             </Paper>
 
